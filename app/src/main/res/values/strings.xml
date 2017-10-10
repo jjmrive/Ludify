@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ludify</string>
+
+    <string name="wrong_qr_format">Invalid QR Format!</string>
+    <string name="ended_visit">Visit completed</string>
+    <string name="already_exists">This visit already exists!</string>
+    <string name="uninitialized_visit">Uninitialized visit</string>
+    <string name="visit_added"> added</string>
+    <string name="collection_ready">I\'m ready!</string>
+
+    <string name="scan_barcode_button">Scan</string>
+    <string name="no_barcode_captured">No barcode captured</string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
+    <string name="visits_button">Visits</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_visits">VisitsActivity</string>
+
+    <string name="pending_status">Playing</string>
+    <string name="ended_status">Complete</string>
+    <string name="title_activity_details">DetailsActivity</string>
+
+    <string name="points">pts</string>
+    <string name="questions">Questions: </string>
+    <string name="facts">Fun facts: </string>
+    <string name="collections">Collections: </string>
+
+    <string name="menu_delete">Delete visit</string>
+</resources>

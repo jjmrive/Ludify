@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jjmrive.ludify">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/LudifyTheme">
+        <activity
+            android:name=".Home"
+            android:theme="@style/LudifyTransparentStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".barcode.BarcodeCaptureActivity"
+            android:theme="@style/LudifyNoActionBar" />
+        <activity
+            android:name=".VisitsActivity"
+            android:label="@string/title_activity_visits"
+            android:parentActivityName=".Home"
+            android:theme="@style/LudifyCompatTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jjmrive.ludify.Home" />
+        </activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:parentActivityName=".VisitsActivity"
+            android:theme="@style/LudifyCompatTheme.TranslucentSystemBars">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jjmrive.ludify.VisitsActivity" />
+        </activity>
+        <activity
+            android:name=".modules.QuestionActivity"
+            android:theme="@style/LudifyTransparentStatusBar" />
+        <activity
+            android:name=".modules.FactActivity"
+            android:theme="@style/LudifyTransparentStatusBar" />
+        <activity
+            android:name=".modules.CollectionActivity"
+            android:theme="@style/LudifyTransparentStatusBar" />
+        <activity android:name=".modules.CollectionItemActivity"
+            android:theme="@style/LudifyTransparentStatusBar"></activity>
+    </application>
+
+</manifest>
